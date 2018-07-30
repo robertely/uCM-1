@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LedMatrix:LedMatrix_08x08 M
+U 1 1 5B5E9EA9
+P 5100 3500
+F 0 "M" H 6200 3350 50  0000 L CNN
+F 1 "LedMatrix_08x08" H 6200 3250 50  0000 L CNN
+F 2 "" H 5100 3450 50  0001 C CNN
+F 3 "" H 5100 3450 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_Array:ULN2803A U?
+U 1 1 5B5E9F86
+P 5850 2750
+F 0 "U?" V 5550 3200 50  0000 L CNN
+F 1 "ULN2803A" V 5650 3200 50  0000 L CNN
+F 2 "" H 5900 2100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5950 2550 50  0001 C CNN
+	1    5850 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3150 5350 3500
+Wire Wire Line
+	5450 3150 5450 3500
+Wire Wire Line
+	5550 3150 5550 3500
+Wire Wire Line
+	5650 3150 5650 3500
+Wire Wire Line
+	5750 3150 5750 3500
+Wire Wire Line
+	5850 3150 5850 3500
+Wire Wire Line
+	5950 3150 5950 3500
+Wire Wire Line
+	6050 3150 6050 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5B5EA50A
+P 5050 2850
+F 0 "#PWR?" H 5050 2600 50  0001 C CNN
+F 1 "GND" H 5055 2677 50  0000 C CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2750 5050 2750
+Wire Wire Line
+	5050 2750 5050 2850
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5B5EB03F
+P 5750 1550
+F 0 "U?" V 5450 900 50  0000 R CNN
+F 1 "74HC595" V 5550 900 50  0000 R CNN
+F 2 "" H 5750 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 5750 1550 50  0001 C CNN
+	1    5750 1550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5350 1950 5350 2350
+Wire Wire Line
+	5450 1950 5450 2350
+Wire Wire Line
+	5550 2350 5550 1950
+Wire Wire Line
+	5650 1950 5650 2350
+Wire Wire Line
+	5750 2350 5750 1950
+Wire Wire Line
+	5850 1950 5850 2350
+Wire Wire Line
+	5950 2350 5950 1950
+Wire Wire Line
+	6050 1950 6050 2350
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5B5EC080
+P 4300 4150
+F 0 "U?" H 4350 4850 50  0000 L TNN
+F 1 "74HC595" H 4350 4750 50  0000 L TNN
+F 2 "" H 4300 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4300 4150 50  0001 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3750 5100 3750
+Wire Wire Line
+	4700 3850 5100 3850
+Wire Wire Line
+	4700 3950 5100 3950
+Wire Wire Line
+	4700 4050 5100 4050
+Wire Wire Line
+	4700 4150 5100 4150
+Wire Wire Line
+	4700 4250 5100 4250
+Wire Wire Line
+	4700 4350 5100 4350
+Wire Wire Line
+	4700 4450 5100 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 5B5F1272
+P 6400 3150
+F 0 "#PWR?" H 6400 3000 50  0001 C CNN
+F 1 "+5V" H 6415 3323 50  0000 C CNN
+F 2 "" H 6400 3150 50  0001 C CNN
+F 3 "" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3150 6150 3300
+Wire Wire Line
+	6150 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 3150
+$Comp
+L power:+5V #PWR?
+U 1 1 5B5F160B
+P 4300 3400
+F 0 "#PWR?" H 4300 3250 50  0001 C CNN
+F 1 "+5V" H 4315 3573 50  0000 C CNN
+F 2 "" H 4300 3400 50  0001 C CNN
+F 3 "" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B5F1647
+P 4300 5050
+F 0 "#PWR?" H 4300 4800 50  0001 C CNN
+F 1 "GND" H 4305 4877 50  0000 C CNN
+F 2 "" H 4300 5050 50  0001 C CNN
+F 3 "" H 4300 5050 50  0001 C CNN
+	1    4300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4850 4300 5050
+Wire Wire Line
+	4300 3400 4300 3550
+$Comp
+L power:+5V #PWR?
+U 1 1 5B5F1EC5
+P 5000 1400
+F 0 "#PWR?" H 5000 1250 50  0001 C CNN
+F 1 "+5V" H 5015 1573 50  0000 C CNN
+F 2 "" H 5000 1400 50  0001 C CNN
+F 3 "" H 5000 1400 50  0001 C CNN
+	1    5000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1400 5000 1550
+Wire Wire Line
+	5000 1550 5150 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5B5F23ED
+P 6550 1650
+F 0 "#PWR?" H 6550 1400 50  0001 C CNN
+F 1 "GND" H 6555 1477 50  0000 C CNN
+F 2 "" H 6550 1650 50  0001 C CNN
+F 3 "" H 6550 1650 50  0001 C CNN
+	1    6550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1550 6550 1550
+Wire Wire Line
+	6550 1550 6550 1650
+$EndSCHEMATC

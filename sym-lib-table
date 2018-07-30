@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Matrix)(type Legacy)(uri /Users/rely/Projects/uCM-1/LedMatrix.lib)(options "")(descr ""))
+  (lib (name LedMatrix)(type Legacy)(uri /Users/rely/Projects/uCM-1/LedMatrix.lib)(options "")(descr ""))
+)
